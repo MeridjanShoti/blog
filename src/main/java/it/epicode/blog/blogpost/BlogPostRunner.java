@@ -24,7 +24,7 @@ public class BlogPostRunner implements CommandLineRunner {
                 blogPost.setCategoria(fakerConfig.faker().book().genre());
                 blogPost.setTitolo(fakerConfig.faker().book().title());
                 blogPost.setCover(fakerConfig.faker().internet().image());
-                blogPost.setContenuto(fakerConfig.faker().lorem().paragraph(10));
+                blogPost.setContenuto(fakerConfig.faker().lorem().paragraph(1));
                 blogPost.setTempoDiLettura(fakerConfig.faker().number().numberBetween(1, 10));
                 blogPostRepository.save(blogPost);
             }

@@ -19,6 +19,7 @@ public class Utente {
     private String cognome;
     private String email;
     private String dataDiNascita;
-    private String avatar = "https://ui-avatars.com/api/?name="+ nome +"+"+ cognome;
+    private String avatar;
+
 
 }

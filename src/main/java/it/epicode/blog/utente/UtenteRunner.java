@@ -24,6 +24,7 @@ public class UtenteRunner implements CommandLineRunner {
                 utente.setCognome(fakerConfig.faker().name().lastName());
                 utente.setEmail(fakerConfig.faker().internet().emailAddress());
                 utente.setDataDiNascita(fakerConfig.faker().date().birthday().toString());
+                utente.setAvatar("https://ui-avatars.com/api/?name="+ utente.getNome() +"+"+ utente.getCognome());
                 utenteRepository.save(utente);
             }
         }
